@@ -1,7 +1,11 @@
 import sys
 
-a = int(sys.stdin.readline())
-b = int(sys.stdin.readline())
+if len(sys.argv) != 3:
+    print("Usage: python3 Calci.py <num1> <num2>")
+    sys.exit(1)
+
+a = int(sys.argv[1])
+b = int(sys.argv[2])
 
 print(a + b)
 print(a - b)
