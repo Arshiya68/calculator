@@ -1,16 +1,18 @@
-import java.util.Scanner;
-
-class Calculator {
+import java.util.*
+    public class Calculator {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
 
-        int a = sc.nextInt();
-        int b = sc.nextInt();
+        if (args.length != 2) {
+            System.out.println("Usage: java Calculator <num1> <num2>");
+            return;
+        }
+
+        int a = Integer.parseInt(args[0]);
+        int b = Integer.parseInt(args[1]);
 
         System.out.println(a + b);
         System.out.println(a - b);
         System.out.println(a * b);
-        System.out.println(a / b);
-        System.out.println(a % b);
+        System.out.println((double)a / b);
     }
 }
