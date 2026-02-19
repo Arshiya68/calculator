@@ -7,7 +7,7 @@ if len(sys.argv) != 3:
 a = int(sys.argv[1])
 b = int(sys.argv[2])
 
-print(a + b)
-print(a - b)
-print(a * b)
-print(a / b)
+print("Addition: ",a + b)
+print("Subtraction: ",a - b)
+print("Multiplication: ",a * b)
+print("Division: ",a / b)
